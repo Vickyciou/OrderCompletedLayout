@@ -119,23 +119,23 @@
 		98F95CEF2AEF5653008088DD /* OrderCompletedLayout */ = {
 			isa = PBXGroup;
 			children = (
-				98F95CF02AEF5653008088DD /* AppDelegate.swift */,
-				98F95CF22AEF5653008088DD /* SceneDelegate.swift */,
-				98F95CF42AEF5653008088DD /* ViewController.swift */,
-				98F95CF62AEF5653008088DD /* Main.storyboard */,
-				98F95CF92AEF5655008088DD /* Assets.xcassets */,
-				98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */,
-				98F95CFE2AEF5655008088DD /* Info.plist */,
-				98F95D202AEF5B9D008088DD /* AmountItemInfoDetailView.xib */,
 				98F95D222AEF5BC4008088DD /* AmountItemInfoDetailView.swift */,
+				98F95D202AEF5B9D008088DD /* AmountItemInfoDetailView.xib */,
 				98F95D242AEF670A008088DD /* AmountItemInfoView.swift */,
 				98F95D262AEF6745008088DD /* AmountItemInfoView.xib */,
-				98F95D282AEF81F5008088DD /* AmountViewSpec.swift */,
-				98F95D2A2AEF848E008088DD /* APIResponse.swift */,
-				98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */,
 				98F95D2E2AEF8701008088DD /* AmountItemsView.swift */,
+				98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */,
 				98F95D302AEF89D1008088DD /* AmountPriceView.swift */,
 				98F95D322AEF89DD008088DD /* AmountPriceView.xib */,
+				98F95D282AEF81F5008088DD /* AmountViewSpec.swift */,
+				98F95D2A2AEF848E008088DD /* APIResponse.swift */,
+				98F95CF02AEF5653008088DD /* AppDelegate.swift */,
+				98F95CF92AEF5655008088DD /* Assets.xcassets */,
+				98F95CFE2AEF5655008088DD /* Info.plist */,
+				98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */,
+				98F95CF62AEF5653008088DD /* Main.storyboard */,
+				98F95CF22AEF5653008088DD /* SceneDelegate.swift */,
+				98F95CF42AEF5653008088DD /* ViewController.swift */,
 			);
 			path = OrderCompletedLayout;
 			sourceTree = "<group>";
@@ -490,6 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +519,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

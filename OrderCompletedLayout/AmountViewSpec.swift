@@ -38,3 +38,6 @@ struct ItemInfoDetailField {
     var trailingTextColor: UIColor? = .black
 }
 
+extension ItemInfoField: AmountItemInfoViewSpec {}
+
+extension ItemInfoDetailField: AmountItemInfoDetailViewSpec {}

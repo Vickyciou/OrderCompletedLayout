@@ -7,6 +7,14 @@
 
 import UIKit
 
+protocol AmountItemInfoDetailViewSpec {
+    var title: String? { get }
+    var leadingText: String? { get }
+    var trailingText: String? { get }
+    var leadingTextColor: UIColor? { get }
+    var trailingTextColor: UIColor? { get }
+}
+
 class AmountItemInfoDetailView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var leadingSubtitleLabel: UILabel!
@@ -20,7 +28,7 @@ class AmountItemInfoDetailView: UIView {
         
     }
     
-    func setupView(data: ItemInfoDetailField) {
+    func setupView(data: AmountItemInfoDetailViewSpec) {
         titleLabel.text = data.title
         leadingSubtitleLabel.text = data.leadingText
         trailingSubtitleLabel.text = data.trailingText

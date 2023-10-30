@@ -7,6 +7,13 @@
 
 import UIKit
 
+protocol AmountItemInfoViewSpec {
+    var showRedLine: Bool { get }
+        var leadingTitleText: String? { get }
+            var trailingTitleText: String? { get }
+                var details: [ItemInfoDetailField] { get }
+}
+
 class AmountItemInfoView: UIView {
     @IBOutlet weak var redLineimageView: UIImageView!
     @IBOutlet weak var leadingTitleLabel: UILabel!
@@ -19,7 +26,7 @@ class AmountItemInfoView: UIView {
         redLineimageView.isHidden = isRedLineHidden
         
     }
-    func setupView(data: ItemInfoField) {
+    func setupView(data: AmountItemInfoViewSpec) {
         isRedLineHidden = data.showRedLine
         leadingTitleLabel.text = data.leadingTitleText
         trailingTitleLabel.text = data.trailingTitleText
