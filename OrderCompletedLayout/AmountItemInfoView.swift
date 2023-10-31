@@ -9,13 +9,14 @@ import UIKit
 
 protocol AmountItemInfoViewSpec {
     var showRedLine: Bool { get }
-        var leadingTitleText: String? { get }
-            var trailingTitleText: String? { get }
-                var details: [ItemInfoDetailField] { get }
+    var leadingTitleText: String? { get }
+    var trailingTitleText: String? { get }
+    var details: [ItemInfoDetailField] { get }
+    
 }
 
 class AmountItemInfoView: UIView {
-    @IBOutlet weak var redLineimageView: UIImageView!
+    @IBOutlet weak var redLineView: UIView!
     @IBOutlet weak var leadingTitleLabel: UILabel!
     @IBOutlet weak var trailingTitleLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
@@ -23,7 +24,7 @@ class AmountItemInfoView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        redLineimageView.isHidden = isRedLineHidden
+        redLineView.isHidden = isRedLineHidden
         
     }
     func setupView(data: AmountItemInfoViewSpec) {
@@ -37,8 +38,9 @@ class AmountItemInfoView: UIView {
             else {
                 fatalError("Failed to instantiate AmountItemInfoDetailView from nib.")
             }
-            view.setupView(data: data.details[index])
+            
             stackView.addArrangedSubview(view)
+            view.setupView(data: data.details[index])
         }
     }
 }

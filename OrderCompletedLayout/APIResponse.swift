@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct APIResponse: TotalAmountSpec {
+struct APIResponse: AmountViewSpec {
     var titleField: TitleField
-    var itemInfoField: [ItemInfoField]
+    var freeTravelCost: AllItemsField?
+    var allItemsField: AllItemsField
+    var amountPriceField: AmountPriceField
     
     init() {
         // TitleField Mock Data
@@ -25,9 +27,7 @@ struct APIResponse: TotalAmountSpec {
 
         let itemDetail2 = ItemInfoDetailField(
                                               leadingText: "共2張，場次：19:30 -22:30",
-                                              trailingText: "$ 24,152",
-                                              leadingTextColor: .red,
-                                              trailingTextColor: .blue)
+                                              trailingText: "$ 24,152")
         
         let itemDetail3 = ItemInfoDetailField(title: "【2人成行】花蓮鯉魚潭湖泊獨木整、海崖谷看海療癒 | 一日遊 | 不含午餐",
                                               leadingText: "數量 x2",
@@ -49,7 +49,11 @@ struct APIResponse: TotalAmountSpec {
         let item3 = ItemInfoField(showRedLine: true,
                                   leadingTitleText: "加購",
                                   details: [itemDetail3, itemDetail4])
+        
+        let amountPriceInfo = AmountPriceField(titleTrailingRedText: "金額小計：$ 1,234,567")
 
-        itemInfoField = [item1, item2, item3]
+        allItemsField = AllItemsField(itemsInfo: [item1, item2, item3],subTotalInfo: amountPriceInfo)
+        
+        amountPriceField = amountPriceInfo
     }
 }

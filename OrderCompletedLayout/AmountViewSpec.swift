@@ -8,19 +8,16 @@
 import Foundation
 import UIKit
 
-protocol TotalAmountSpec {
-//    var titleField : TitleField { get }
-    var itemInfoField: [ItemInfoField] { get }
-//    var subTotalField
-//    var discountField
-//    var amountFiled
-}
-
 struct TitleField {
     var leadingTitleText: String?
     var middleTitleText: Int?
     var trailingTitleText: String?
     var isExpended: Bool
+}
+
+struct AllItemsField {
+    var itemsInfo: [ItemInfoField]
+    var subTotalInfo: AmountPriceField
 }
 
 struct ItemInfoField {
@@ -38,6 +35,17 @@ struct ItemInfoDetailField {
     var trailingTextColor: UIColor? = .black
 }
 
+struct AmountPriceField {
+    var titleTrailingRedText: String?
+    var subTrailingRedText: String?
+    var subLeadingBlackText: String?
+    var descriptionText: String?
+}
+
+extension AllItemsField: AmountItemsViewSpec {}
+
 extension ItemInfoField: AmountItemInfoViewSpec {}
 
 extension ItemInfoDetailField: AmountItemInfoDetailViewSpec {}
+
+extension AmountPriceField: AmountPriceViewSpec {}

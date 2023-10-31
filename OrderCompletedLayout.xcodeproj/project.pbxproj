@@ -26,6 +26,8 @@
 		98F95D2F2AEF8701008088DD /* AmountItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D2E2AEF8701008088DD /* AmountItemsView.swift */; };
 		98F95D312AEF89D1008088DD /* AmountPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D302AEF89D1008088DD /* AmountPriceView.swift */; };
 		98F95D332AEF89DD008088DD /* AmountPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F95D322AEF89DD008088DD /* AmountPriceView.xib */; };
+		98F95D352AF0D9B1008088DD /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D342AF0D9B1008088DD /* AmountView.swift */; };
+		98F95D372AF0DAC9008088DD /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F95D362AF0DAC9008088DD /* AmountView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		98F95D2E2AEF8701008088DD /* AmountItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountItemsView.swift; sourceTree = "<group>"; };
 		98F95D302AEF89D1008088DD /* AmountPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountPriceView.swift; sourceTree = "<group>"; };
 		98F95D322AEF89DD008088DD /* AmountPriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountPriceView.xib; sourceTree = "<group>"; };
+		98F95D342AF0D9B1008088DD /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		98F95D362AF0DAC9008088DD /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 				98F95CF62AEF5653008088DD /* Main.storyboard */,
 				98F95CF22AEF5653008088DD /* SceneDelegate.swift */,
 				98F95CF42AEF5653008088DD /* ViewController.swift */,
+				98F95D342AF0D9B1008088DD /* AmountView.swift */,
+				98F95D362AF0DAC9008088DD /* AmountView.xib */,
 			);
 			path = OrderCompletedLayout;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				98F95D2D2AEF86DD008088DD /* AmountItemsView.xib in Resources */,
 				98F95CFA2AEF5655008088DD /* Assets.xcassets in Resources */,
 				98F95D332AEF89DD008088DD /* AmountPriceView.xib in Resources */,
+				98F95D372AF0DAC9008088DD /* AmountView.xib in Resources */,
 				98F95CF82AEF5653008088DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +305,7 @@
 				98F95D292AEF81F5008088DD /* AmountViewSpec.swift in Sources */,
 				98F95D252AEF670A008088DD /* AmountItemInfoView.swift in Sources */,
 				98F95CF52AEF5653008088DD /* ViewController.swift in Sources */,
+				98F95D352AF0D9B1008088DD /* AmountView.swift in Sources */,
 				98F95CF12AEF5653008088DD /* AppDelegate.swift in Sources */,
 				98F95CF32AEF5653008088DD /* SceneDelegate.swift in Sources */,
 				98F95D312AEF89D1008088DD /* AmountPriceView.swift in Sources */,
@@ -490,7 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +527,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
