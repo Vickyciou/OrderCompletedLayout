@@ -2,16 +2,22 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountItemInfoView" customModule="OrderCompletedLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="leadingTitleLabel" destination="dDO-s2-GcK" id="Le4-DT-fDu"/>
+                <outlet property="redLineView" destination="kc6-Vk-HZL" id="Y5b-I1-cq9"/>
+                <outlet property="stackView" destination="qFX-Zs-i5b" id="mk9-df-BQB"/>
+                <outlet property="trailingTitleLabel" destination="sKx-ud-53W" id="VlQ-oP-ReD"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmountItemInfoView" customModule="OrderCompletedLayout" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -60,12 +66,6 @@
                 <constraint firstItem="sKx-ud-53W" firstAttribute="leading" secondItem="dDO-s2-GcK" secondAttribute="trailing" constant="6" id="yeW-Lc-VQV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="leadingTitleLabel" destination="dDO-s2-GcK" id="ACM-az-KlF"/>
-                <outlet property="redLineView" destination="kc6-Vk-HZL" id="DoF-2w-sNx"/>
-                <outlet property="stackView" destination="qFX-Zs-i5b" id="01r-ee-p8W"/>
-                <outlet property="trailingTitleLabel" destination="sKx-ud-53W" id="dXx-i9-bfb"/>
-            </connections>
             <point key="canvasLocation" x="-25.190839694656489" y="-237.32394366197184"/>
         </view>
     </objects>

@@ -42,7 +42,7 @@ struct APIResponse: AmountViewSpec {
                                   leadingTitleText: "包車一日遊(1-4人) - 電子票",
                                   details: [itemDetail1])
 
-        let item2 = ItemInfoField(showRedLine: false,
+        let item2 = ItemInfoField(showRedLine: true,
                                   leadingTitleText: "家庭旅遊或公司出遊(5-8人)C路線",
                                   details: [itemDetail2])
         

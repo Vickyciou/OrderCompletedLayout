@@ -15,30 +15,24 @@ protocol AmountItemInfoViewSpec {
     
 }
 
-class AmountItemInfoView: UIView {
+class AmountItemInfoView: BaseXibView {
     @IBOutlet weak var redLineView: UIView!
     @IBOutlet weak var leadingTitleLabel: UILabel!
     @IBOutlet weak var trailingTitleLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
-    var isRedLineHidden: Bool = false
+//    var isRedLineHidden: Bool = false
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        redLineView.isHidden = isRedLineHidden
         
     }
     func setupView(data: AmountItemInfoViewSpec) {
-        isRedLineHidden = data.showRedLine
+        redLineView.isHidden = !data.showRedLine
         leadingTitleLabel.text = data.leadingTitleText
         trailingTitleLabel.text = data.trailingTitleText
         
         for index in 0..<data.details.count {
-            guard let view = UINib(nibName: "AmountItemInfoDetailView", bundle: nil).instantiate(
-                withOwner: self, options: nil).first as? AmountItemInfoDetailView
-            else {
-                fatalError("Failed to instantiate AmountItemInfoDetailView from nib.")
-            }
-            
+            let view = AmountItemInfoDetailView()
             stackView.addArrangedSubview(view)
             view.setupView(data: data.details[index])
         }

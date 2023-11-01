@@ -2,37 +2,36 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountView" customModule="OrderCompletedLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="Gts-SM-34F" id="ajw-MP-cve"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmountView" customModule="OrderCompletedLayout" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="622"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="493"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lCH-ga-sFe">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gts-SM-34F">
+                    <rect key="frame" x="16" y="14" width="361" height="465"/>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="lCH-ga-sFe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CGl-tA-EHd"/>
-                <constraint firstItem="lCH-ga-sFe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Crh-GC-tef"/>
-                <constraint firstAttribute="trailing" secondItem="lCH-ga-sFe" secondAttribute="trailing" id="Y0F-Ks-WBb"/>
-                <constraint firstAttribute="top" secondItem="lCH-ga-sFe" secondAttribute="bottom" id="p9p-82-Y2w"/>
+                <constraint firstItem="Gts-SM-34F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="2w5-kn-0A9"/>
+                <constraint firstItem="Gts-SM-34F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="6Gm-Pr-6n5"/>
+                <constraint firstAttribute="trailing" secondItem="Gts-SM-34F" secondAttribute="trailing" constant="16" id="rro-iK-2nm"/>
+                <constraint firstAttribute="bottom" secondItem="Gts-SM-34F" secondAttribute="bottom" constant="14" id="yxd-b3-ZaF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="stackView" destination="lCH-ga-sFe" id="0LA-MO-Jaf"/>
-            </connections>
-            <point key="canvasLocation" x="-45.038167938931295" y="-60.563380281690144"/>
+            <point key="canvasLocation" x="90.839694656488547" y="146.83098591549296"/>
         </view>
     </objects>
     <resources>

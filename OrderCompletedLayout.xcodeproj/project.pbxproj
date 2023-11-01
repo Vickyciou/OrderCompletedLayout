@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98A5A0762AF21F1D009130EF /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A0752AF21F1D009130EF /* AmountView.xib */; };
+		98A5A0782AF21F39009130EF /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0772AF21F39009130EF /* AmountView.swift */; };
+		98A5A0C02AF23EBE009130EF /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */; };
+		98A5A0C32AF240F9009130EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0C12AF240F9009130EF /* ViewController.swift */; };
+		98A5A0C42AF240F9009130EF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A0C22AF240F9009130EF /* ViewController.xib */; };
 		98F95CF12AEF5653008088DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95CF02AEF5653008088DD /* AppDelegate.swift */; };
 		98F95CF32AEF5653008088DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95CF22AEF5653008088DD /* SceneDelegate.swift */; };
-		98F95CF52AEF5653008088DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95CF42AEF5653008088DD /* ViewController.swift */; };
-		98F95CF82AEF5653008088DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F95CF62AEF5653008088DD /* Main.storyboard */; };
 		98F95CFA2AEF5655008088DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F95CF92AEF5655008088DD /* Assets.xcassets */; };
 		98F95CFD2AEF5655008088DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */; };
 		98F95D082AEF5656008088DD /* OrderCompletedLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D072AEF5656008088DD /* OrderCompletedLayoutTests.swift */; };
@@ -20,14 +23,12 @@
 		98F95D232AEF5BC4008088DD /* AmountItemInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D222AEF5BC4008088DD /* AmountItemInfoDetailView.swift */; };
 		98F95D252AEF670A008088DD /* AmountItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D242AEF670A008088DD /* AmountItemInfoView.swift */; };
 		98F95D272AEF6745008088DD /* AmountItemInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F95D262AEF6745008088DD /* AmountItemInfoView.xib */; };
-		98F95D292AEF81F5008088DD /* AmountViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D282AEF81F5008088DD /* AmountViewSpec.swift */; };
+		98F95D292AEF81F5008088DD /* AmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D282AEF81F5008088DD /* AmountViewModel.swift */; };
 		98F95D2B2AEF848E008088DD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D2A2AEF848E008088DD /* APIResponse.swift */; };
 		98F95D2D2AEF86DD008088DD /* AmountItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */; };
 		98F95D2F2AEF8701008088DD /* AmountItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D2E2AEF8701008088DD /* AmountItemsView.swift */; };
 		98F95D312AEF89D1008088DD /* AmountPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D302AEF89D1008088DD /* AmountPriceView.swift */; };
 		98F95D332AEF89DD008088DD /* AmountPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F95D322AEF89DD008088DD /* AmountPriceView.xib */; };
-		98F95D352AF0D9B1008088DD /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95D342AF0D9B1008088DD /* AmountView.swift */; };
-		98F95D372AF0DAC9008088DD /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F95D362AF0DAC9008088DD /* AmountView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98A5A0752AF21F1D009130EF /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
+		98A5A0772AF21F39009130EF /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
+		98A5A0C12AF240F9009130EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98A5A0C22AF240F9009130EF /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		98F95CED2AEF5653008088DD /* OrderCompletedLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderCompletedLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F95CF02AEF5653008088DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F95CF22AEF5653008088DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98F95CF42AEF5653008088DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98F95CF72AEF5653008088DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98F95CF92AEF5655008088DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98F95CFC2AEF5655008088DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98F95CFE2AEF5655008088DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,14 +69,12 @@
 		98F95D222AEF5BC4008088DD /* AmountItemInfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountItemInfoDetailView.swift; sourceTree = "<group>"; };
 		98F95D242AEF670A008088DD /* AmountItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountItemInfoView.swift; sourceTree = "<group>"; };
 		98F95D262AEF6745008088DD /* AmountItemInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountItemInfoView.xib; sourceTree = "<group>"; };
-		98F95D282AEF81F5008088DD /* AmountViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewSpec.swift; sourceTree = "<group>"; };
+		98F95D282AEF81F5008088DD /* AmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewModel.swift; sourceTree = "<group>"; };
 		98F95D2A2AEF848E008088DD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountItemsView.xib; sourceTree = "<group>"; };
 		98F95D2E2AEF8701008088DD /* AmountItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountItemsView.swift; sourceTree = "<group>"; };
 		98F95D302AEF89D1008088DD /* AmountPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountPriceView.swift; sourceTree = "<group>"; };
 		98F95D322AEF89DD008088DD /* AmountPriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountPriceView.xib; sourceTree = "<group>"; };
-		98F95D342AF0D9B1008088DD /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
-		98F95D362AF0DAC9008088DD /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,17 +133,18 @@
 				98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */,
 				98F95D302AEF89D1008088DD /* AmountPriceView.swift */,
 				98F95D322AEF89DD008088DD /* AmountPriceView.xib */,
-				98F95D282AEF81F5008088DD /* AmountViewSpec.swift */,
+				98F95D282AEF81F5008088DD /* AmountViewModel.swift */,
 				98F95D2A2AEF848E008088DD /* APIResponse.swift */,
 				98F95CF02AEF5653008088DD /* AppDelegate.swift */,
 				98F95CF92AEF5655008088DD /* Assets.xcassets */,
 				98F95CFE2AEF5655008088DD /* Info.plist */,
 				98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */,
-				98F95CF62AEF5653008088DD /* Main.storyboard */,
 				98F95CF22AEF5653008088DD /* SceneDelegate.swift */,
-				98F95CF42AEF5653008088DD /* ViewController.swift */,
-				98F95D342AF0D9B1008088DD /* AmountView.swift */,
-				98F95D362AF0DAC9008088DD /* AmountView.xib */,
+				98A5A0752AF21F1D009130EF /* AmountView.xib */,
+				98A5A0772AF21F39009130EF /* AmountView.swift */,
+				98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */,
+				98A5A0C12AF240F9009130EF /* ViewController.swift */,
+				98A5A0C22AF240F9009130EF /* ViewController.xib */,
 			);
 			path = OrderCompletedLayout;
 			sourceTree = "<group>";
@@ -268,13 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F95D272AEF6745008088DD /* AmountItemInfoView.xib in Resources */,
+				98A5A0C42AF240F9009130EF /* ViewController.xib in Resources */,
 				98F95D212AEF5B9D008088DD /* AmountItemInfoDetailView.xib in Resources */,
 				98F95CFD2AEF5655008088DD /* LaunchScreen.storyboard in Resources */,
 				98F95D2D2AEF86DD008088DD /* AmountItemsView.xib in Resources */,
 				98F95CFA2AEF5655008088DD /* Assets.xcassets in Resources */,
+				98A5A0762AF21F1D009130EF /* AmountView.xib in Resources */,
 				98F95D332AEF89DD008088DD /* AmountPriceView.xib in Resources */,
-				98F95D372AF0DAC9008088DD /* AmountView.xib in Resources */,
-				98F95CF82AEF5653008088DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,15 +303,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F95D2B2AEF848E008088DD /* APIResponse.swift in Sources */,
+				98A5A0C02AF23EBE009130EF /* BaseXibView.swift in Sources */,
 				98F95D2F2AEF8701008088DD /* AmountItemsView.swift in Sources */,
 				98F95D232AEF5BC4008088DD /* AmountItemInfoDetailView.swift in Sources */,
-				98F95D292AEF81F5008088DD /* AmountViewSpec.swift in Sources */,
+				98F95D292AEF81F5008088DD /* AmountViewModel.swift in Sources */,
 				98F95D252AEF670A008088DD /* AmountItemInfoView.swift in Sources */,
-				98F95CF52AEF5653008088DD /* ViewController.swift in Sources */,
-				98F95D352AF0D9B1008088DD /* AmountView.swift in Sources */,
+				98A5A0C32AF240F9009130EF /* ViewController.swift in Sources */,
 				98F95CF12AEF5653008088DD /* AppDelegate.swift in Sources */,
 				98F95CF32AEF5653008088DD /* SceneDelegate.swift in Sources */,
 				98F95D312AEF89D1008088DD /* AmountPriceView.swift in Sources */,
+				98A5A0782AF21F39009130EF /* AmountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98F95CF62AEF5653008088DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98F95CF72AEF5653008088DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -495,7 +491,6 @@
 				INFOPLIST_FILE = OrderCompletedLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -524,7 +519,6 @@
 				INFOPLIST_FILE = OrderCompletedLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

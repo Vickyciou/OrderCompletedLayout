@@ -1,5 +1,5 @@
 //
-//  AmountViewSpec.swift
+//  AmountViewModel.swift
 //  OrderCompletedLayout
 //
 //  Created by Vicky on 2023/10/30.

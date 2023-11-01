@@ -2,20 +2,27 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountPriceView" customModule="OrderCompletedLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="abc-T0-2P0" id="Cgw-0a-Pjo"/>
+                <outlet property="grayLineView" destination="mPT-Oc-h4V" id="rup-qn-1bn"/>
+                <outlet property="subLeadingBlackLabel" destination="9JW-EG-B5F" id="yKm-0m-R4k"/>
+                <outlet property="subTrailingRedLabel" destination="eXk-Rq-ITQ" id="d1v-2u-uQA"/>
+                <outlet property="titleTrailingRedLabel" destination="yRL-iN-Q3x" id="cDg-NF-mwN"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmountPriceView" customModule="OrderCompletedLayout" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="104"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-Oc-h4V">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-Oc-h4V" userLabel="GrayLineView">
                     <rect key="frame" x="0.0" y="12" width="393" height="2"/>
                     <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -28,7 +35,7 @@
                     <color key="textColor" red="0.94117647059999998" green="0.2156862745" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="SubTrailingRedLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXk-Rq-ITQ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="SubTrailingRedLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXk-Rq-ITQ" userLabel="Sub Trailing Red Label">
                     <rect key="frame" x="258" y="49" width="135" height="9"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <color key="textColor" red="0.94117647059999998" green="0.2156862745" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,13 +75,6 @@
                 <constraint firstAttribute="trailing" secondItem="yRL-iN-Q3x" secondAttribute="trailing" id="xsv-qN-zQR"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="descriptionLabel" destination="abc-T0-2P0" id="Ur0-c5-m4h"/>
-                <outlet property="grayLineView" destination="mPT-Oc-h4V" id="QyM-QO-W0H"/>
-                <outlet property="subLeadingBlackLabel" destination="9JW-EG-B5F" id="XhX-of-yld"/>
-                <outlet property="subTrailingReLabel" destination="eXk-Rq-ITQ" id="h4P-XQ-kqs"/>
-                <outlet property="titleTrailingRedLabel" destination="yRL-iN-Q3x" id="iVc-b5-eoJ"/>
-            </connections>
             <point key="canvasLocation" x="26.717557251908396" y="-802.81690140845069"/>
         </view>
     </objects>

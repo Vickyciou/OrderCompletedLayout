@@ -2,9 +2,10 @@
 //  AmountView.swift
 //  OrderCompletedLayout
 //
-//  Created by Vicky on 2023/10/31.
+//  Created by Vicky on 2023/11/1.
 //
 
+import Foundation
 import UIKit
 
 protocol AmountViewSpec {
@@ -15,31 +16,15 @@ protocol AmountViewSpec {
     var amountPriceField: AmountPriceField { get }
 }
 
-class AmountView: UIView {
+class AmountView: BaseXibView {
     @IBOutlet weak var stackView: UIStackView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    private let allItemsView = AmountItemsView()
+    private let bottomAmountView = AmountPriceView()
     
     func setupView(data: AmountViewSpec) {
-        guard let allItemsView = UINib(nibName: "AmountItemsView", bundle: nil).instantiate(
-            withOwner: self, options: nil).first as? AmountItemsView
-        else {
-            fatalError("Failed to instantiate AmountItemsView from nib.")
-        }
-        
-//        stackView.addArrangedSubview(allItemsView)
-        
-        guard let bottomAmountView = UINib(nibName: "AmountPriceView", bundle: nil).instantiate(
-            withOwner: self, options: nil).first as? AmountPriceView
-        else {
-            fatalError("Failed to instantiate AmountPriceView from nib.")
-        }
         stackView.addArrangedSubview(allItemsView)
         stackView.addArrangedSubview(bottomAmountView)
         allItemsView.setupView(data: data.allItemsField)
         bottomAmountView.setupView(data: data.amountPriceField)
-        
     }
 }

@@ -15,7 +15,7 @@ protocol AmountItemInfoDetailViewSpec {
     var trailingTextColor: UIColor? { get }
 }
 
-class AmountItemInfoDetailView: UIView {
+class AmountItemInfoDetailView: BaseXibView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var leadingSubtitleLabel: UILabel!
     @IBOutlet weak var trailingSubtitleLabel: UILabel!

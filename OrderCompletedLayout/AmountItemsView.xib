@@ -2,26 +2,30 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountItemsView" customModule="OrderCompletedLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="amountPriceView" destination="EGv-LT-bZf" id="DfP-TY-MAS"/>
+                <outlet property="stackView" destination="0pS-gb-kpK" id="wLQ-YL-Z14"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmountItemsView" customModule="OrderCompletedLayout" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="274"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0pS-gb-kpK">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0pS-gb-kpK">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" placeholder="YES" id="WHE-Ul-JY9"/>
                     </constraints>
                 </stackView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGv-LT-bZf">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGv-LT-bZf" customClass="AmountPriceView" customModule="OrderCompletedLayout" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="200" width="393" height="74"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
@@ -38,10 +42,6 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0pS-gb-kpK" secondAttribute="trailing" id="xlD-YP-xNg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="amountPriceView" destination="EGv-LT-bZf" id="qM9-QX-KqY"/>
-                <outlet property="stackView" destination="0pS-gb-kpK" id="eY6-Pn-q00"/>
-            </connections>
             <point key="canvasLocation" x="107.63358778625954" y="-204.22535211267606"/>
         </view>
     </objects>
