@@ -23,26 +23,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-Oc-h4V" userLabel="GrayLineView">
-                    <rect key="frame" x="0.0" y="12" width="393" height="2"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="2"/>
                     <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="eeG-px-Ifa"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="TitleTrailingRedLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRL-iN-Q3x">
-                    <rect key="frame" x="0.0" y="26" width="393" height="17"/>
+                    <rect key="frame" x="0.0" y="14" width="393" height="21"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <color key="textColor" red="0.94117647059999998" green="0.2156862745" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="SubTrailingRedLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXk-Rq-ITQ" userLabel="Sub Trailing Red Label">
-                    <rect key="frame" x="258" y="49" width="135" height="9"/>
+                    <rect key="frame" x="258" y="41" width="135" height="17"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <color key="textColor" red="0.94117647059999998" green="0.2156862745" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubLeadingBlackLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-EG-B5F">
-                    <rect key="frame" x="0.0" y="49" width="264" height="9"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubLeadingBlackLabel" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-EG-B5F">
+                    <rect key="frame" x="0.0" y="41" width="252" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                 <constraint firstItem="abc-T0-2P0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CS8-Hr-qLf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mPT-Oc-h4V" secondAttribute="trailing" id="Grt-tL-UxQ"/>
                 <constraint firstItem="eXk-Rq-ITQ" firstAttribute="bottom" secondItem="9JW-EG-B5F" secondAttribute="bottom" id="NeX-B9-Bc4"/>
-                <constraint firstItem="9JW-EG-B5F" firstAttribute="trailing" secondItem="eXk-Rq-ITQ" secondAttribute="leading" constant="6" id="dkb-7l-zYJ"/>
+                <constraint firstItem="9JW-EG-B5F" firstAttribute="trailing" secondItem="eXk-Rq-ITQ" secondAttribute="leading" constant="-6" id="dkb-7l-zYJ"/>
                 <constraint firstItem="9JW-EG-B5F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="glt-Xk-hzH"/>
                 <constraint firstItem="9JW-EG-B5F" firstAttribute="top" secondItem="yRL-iN-Q3x" secondAttribute="bottom" constant="6" id="iND-Gw-40D"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eXk-Rq-ITQ" secondAttribute="trailing" id="is6-n4-BZh"/>
@@ -70,7 +70,7 @@
                 <constraint firstAttribute="bottom" secondItem="abc-T0-2P0" secondAttribute="bottom" id="lWw-OX-cLm"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eXk-Rq-ITQ" secondAttribute="bottom" constant="12" id="mm8-Sg-Ngi"/>
                 <constraint firstAttribute="trailing" secondItem="abc-T0-2P0" secondAttribute="trailing" id="poL-DX-TFo"/>
-                <constraint firstItem="mPT-Oc-h4V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="tIg-Ie-5Qy"/>
+                <constraint firstItem="mPT-Oc-h4V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tIg-Ie-5Qy"/>
                 <constraint firstItem="yRL-iN-Q3x" firstAttribute="top" secondItem="mPT-Oc-h4V" secondAttribute="bottom" constant="12" id="xsL-CJ-DrA"/>
                 <constraint firstAttribute="trailing" secondItem="yRL-iN-Q3x" secondAttribute="trailing" id="xsv-qN-zQR"/>
             </constraints>

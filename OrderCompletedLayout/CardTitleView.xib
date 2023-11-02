@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardTitleView" customModule="OrderCompletedLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="blackAndRedLabel" destination="Zly-mq-Wms" id="XOF-1o-JkU"/>
+                <outlet property="leadingLabel" destination="tkk-wz-3RI" id="Gjh-zJ-7Pz"/>
+                <outlet property="trailingButton" destination="3Nk-4T-rz9" id="HXl-zi-lDw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="LeadingLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkk-wz-3RI">
+                    <rect key="frame" x="15.999999999999993" y="14" width="99.333333333333314" height="25"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black+RedLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zly-mq-Wms">
+                    <rect key="frame" x="115.33333333333333" y="14" width="189.66666666666669" height="25"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Nk-4T-rz9">
+                    <rect key="frame" x="313" y="16" width="64" height="21"/>
+                    <color key="tintColor" red="0.94117647059999998" green="0.2156862745" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Button">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.19837995190416202" blue="0.28537524667114922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="arrowtriangle.down.fill" catalog="system" symbolScale="small"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                    </state>
+                    <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.down.fill" catalog="system" imagePlacement="trailing" title="Button" imagePadding="4" titleAlignment="trailing">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                        <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="14"/>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="trailingButtonTapped:" destination="-1" eventType="touchUpInside" id="wIY-Nv-3D1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Zly-mq-Wms" firstAttribute="leading" secondItem="tkk-wz-3RI" secondAttribute="trailing" id="34N-Ct-ArS"/>
+                <constraint firstAttribute="bottom" secondItem="3Nk-4T-rz9" secondAttribute="bottom" constant="16" id="4m0-Tq-DGR"/>
+                <constraint firstItem="tkk-wz-3RI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="72I-PO-8OE"/>
+                <constraint firstAttribute="trailing" secondItem="3Nk-4T-rz9" secondAttribute="trailing" constant="16" id="C9Y-uR-Ve9"/>
+                <constraint firstAttribute="bottom" secondItem="tkk-wz-3RI" secondAttribute="bottom" constant="14" id="JHZ-tA-Qtb"/>
+                <constraint firstItem="Zly-mq-Wms" firstAttribute="top" secondItem="tkk-wz-3RI" secondAttribute="top" id="Lvk-Rj-x9z"/>
+                <constraint firstItem="3Nk-4T-rz9" firstAttribute="leading" secondItem="Zly-mq-Wms" secondAttribute="trailing" constant="8" id="QC7-YV-Niu"/>
+                <constraint firstItem="tkk-wz-3RI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="Wbl-To-fw6"/>
+                <constraint firstItem="Zly-mq-Wms" firstAttribute="bottom" secondItem="tkk-wz-3RI" secondAttribute="bottom" id="n05-9R-Yoc"/>
+                <constraint firstItem="3Nk-4T-rz9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="t6y-Wi-vue"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.64122137404578" y="-260.91549295774649"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

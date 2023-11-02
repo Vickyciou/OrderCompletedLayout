@@ -6,24 +6,24 @@
 //
 
 import Foundation
+import UIKit
 
 struct APIResponse: AmountViewSpec {
     var titleField: TitleField
     var freeTravelCost: AllItemsField?
     var allItemsField: AllItemsField
+    var discountField: DiscountField?
     var amountPriceField: AmountPriceField
     
     init() {
-        // TitleField Mock Data
-        titleField = TitleField(leadingTitleText: "Total Amount",
-                                middleTitleText: 12345,
-                                trailingTitleText: "USD",
+        titleField = TitleField(leadingText: "總額：",
+                                blackAndRedText: "TWD 1,234,567",
+                                trailingText: "費用明細",
                                 isExpended: true)
 
-        // ItemInfoField Mock Data
         let itemDetail1 = ItemInfoDetailField(
                                               leadingText: "共2張",
-                                              trailingText: " $54,152")
+                                              trailingText: " $ 54,152")
 
         let itemDetail2 = ItemInfoDetailField(
                                               leadingText: "共2張，場次：19:30 -22:30",
@@ -55,5 +55,30 @@ struct APIResponse: AmountViewSpec {
         allItemsField = AllItemsField(itemsInfo: [item1, item2, item3],subTotalInfo: amountPriceInfo)
         
         amountPriceField = amountPriceInfo
+        
+        freeTravelCost = AllItemsField(itemsInfo:
+                                        [
+                                            ItemInfoField(showRedLine: true,
+                                                          leadingTitleText: "費用",
+                                                          details: [
+                                                            ItemInfoDetailField(leadingText: "大人 x 2位、小孩 x 2位、嬰兒 x 2位")
+                                                          ])
+                                        ],
+                                       subTotalInfo: AmountPriceField(titleTrailingRedText: "金額小計: $ 52,000",
+                                                                      subTrailingRedText: "參考稅金：  $ 8,000"))
+        
+        discountField = DiscountField(
+            discountDetail: [
+                DiscountDetailField(leadingText: "雙11下殺/會員獨享優惠",
+                                trailingText: "- $ 1,000"
+                                   ),
+                                
+                DiscountDetailField(leadingText: "國旅券折抵",
+                                trailingText: "- $ 1,000"
+                               ),
+                DiscountDetailField(leadingText: "折扣碼",
+                                trailingText: "- $ 1,000"
+                                )
+        ])
     }
 }

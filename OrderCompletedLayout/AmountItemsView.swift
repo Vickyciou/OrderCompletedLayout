@@ -19,7 +19,6 @@ class AmountItemsView: BaseXibView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
     }
     
     func setupView(data: AmountItemsViewSpec) {
@@ -30,8 +29,6 @@ class AmountItemsView: BaseXibView {
             view.setupView(data: data.itemsInfo[index])
         }
         
-//        amountPriceView = UINib(nibName: "AmountPriceView", bundle: nil).instantiate(
-//            withOwner: self, options: nil).first as? AmountPriceView
         amountPriceView.setupView(data: data.subTotalInfo)
         
     }

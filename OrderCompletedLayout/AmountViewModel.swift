@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 struct TitleField {
-    var leadingTitleText: String?
-    var middleTitleText: Int?
-    var trailingTitleText: String?
+    var leadingText: String
+    var blackAndRedText: String?
+    var trailingText: String?
     var isExpended: Bool
 }
 
@@ -42,6 +42,16 @@ struct AmountPriceField {
     var descriptionText: String?
 }
 
+struct DiscountField {
+    var discountDetail: [DiscountDetailField]
+}
+
+struct DiscountDetailField {
+    var leadingText: String?
+    var trailingText: String?
+}
+extension TitleField: CardTitleViewSpec {}
+
 extension AllItemsField: AmountItemsViewSpec {}
 
 extension ItemInfoField: AmountItemInfoViewSpec {}
@@ -49,3 +59,7 @@ extension ItemInfoField: AmountItemInfoViewSpec {}
 extension ItemInfoDetailField: AmountItemInfoDetailViewSpec {}
 
 extension AmountPriceField: AmountPriceViewSpec {}
+
+extension DiscountField: DiscountViewSpec {}
+
+extension DiscountDetailField: DiscountDetailViewSpec {}
