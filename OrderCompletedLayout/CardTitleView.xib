@@ -28,13 +28,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black+RedLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zly-mq-Wms">
-                    <rect key="frame" x="115.33333333333333" y="14" width="189.66666666666669" height="25"/>
+                    <rect key="frame" x="115.33333333333333" y="14" width="184.66666666666669" height="25"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Nk-4T-rz9">
-                    <rect key="frame" x="313" y="16" width="64" height="21"/>
+                    <rect key="frame" x="308" y="16" width="69" height="21"/>
                     <color key="tintColor" red="0.94117647059999998" green="0.2156862745" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
                     <state key="normal">
@@ -52,7 +52,7 @@
                     </state>
                     <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.down.fill" catalog="system" imagePlacement="trailing" title="Button" imagePadding="4" titleAlignment="trailing">
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                        <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="14"/>
+                        <fontDescription key="titleFontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
                         <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                     </buttonConfiguration>
                     <connections>
