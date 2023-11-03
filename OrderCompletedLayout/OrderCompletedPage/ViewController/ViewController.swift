@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        amountView.setupView(type: .tickets, data: data)
+        amountView.setupView(type: .vacation, data: data)
     }
 
 

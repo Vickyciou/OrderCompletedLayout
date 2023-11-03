@@ -19,12 +19,12 @@ class AmountItemInfoDetailView: BaseXibView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var leadingSubtitleLabel: UILabel!
     @IBOutlet weak var trailingSubtitleLabel: UILabel!
+    @IBOutlet weak var subtitleStackView: UIStackView!
     private var leadingSubtitleColor: UIColor? = .black
     private var trailingSubtitleColor: UIColor? = .black
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         
     }
     
@@ -32,6 +32,13 @@ class AmountItemInfoDetailView: BaseXibView {
         titleLabel.text = data.title
         leadingSubtitleLabel.text = data.leadingText
         trailingSubtitleLabel.text = data.trailingText
+        
+        titleLabel.isHidden = data.title == nil || data.title?.isEmpty == true
+        
+        subtitleStackView.isHidden =
+        (data.leadingText == nil || data.leadingText?.isEmpty == true) &&
+        (data.trailingText == nil || data.trailingText?.isEmpty == true)
+
         leadingSubtitleLabel.textColor = data.leadingTextColor ?? leadingSubtitleColor
         trailingSubtitleLabel.textColor = data.trailingTextColor ?? trailingSubtitleColor
     }

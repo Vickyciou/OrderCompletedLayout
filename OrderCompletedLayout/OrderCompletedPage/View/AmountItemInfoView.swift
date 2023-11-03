@@ -20,7 +20,6 @@ class AmountItemInfoView: BaseXibView {
     @IBOutlet weak var leadingTitleLabel: UILabel!
     @IBOutlet weak var trailingTitleLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
-//    var isRedLineHidden: Bool = false
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +29,8 @@ class AmountItemInfoView: BaseXibView {
         redLineView.isHidden = !data.showRedLine
         leadingTitleLabel.text = data.leadingTitleText
         trailingTitleLabel.text = data.trailingTitleText
+        
+        trailingTitleLabel.isHidden = data.trailingTitleText == nil || data.trailingTitleText?.isEmpty == true
         
         for index in 0..<data.details.count {
             let view = AmountItemInfoDetailView()

@@ -20,6 +20,7 @@ class AmountPriceView: BaseXibView {
     @IBOutlet weak var subTrailingRedLabel: UILabel!
     @IBOutlet weak var subLeadingBlackLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var subtitleStackView: UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +32,12 @@ class AmountPriceView: BaseXibView {
         subTrailingRedLabel.text = data.subTrailingRedText
         subLeadingBlackLabel.text = data.subLeadingBlackText
         descriptionLabel.text = data.descriptionText
+        
+        subtitleStackView.isHidden =
+        (data.subLeadingBlackText == nil || data.subLeadingBlackText?.isEmpty == true) &&
+        (data.subTrailingRedText == nil || data.subTrailingRedText?.isEmpty == true)
+        
+        descriptionLabel.isHidden = data.descriptionText == nil || data.descriptionText?.isEmpty == true
         
         if descriptionLabel.numberOfLines >= 1 {
             descriptionLabel.textAlignment = .right

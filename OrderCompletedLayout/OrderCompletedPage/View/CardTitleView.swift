@@ -18,6 +18,9 @@ class CardTitleView: BaseXibView {
     @IBOutlet weak var leadingLabel: UILabel!
     @IBOutlet weak var blackAndRedLabel: UILabel!
     @IBOutlet weak var trailingButton: UIButton!
+    @IBOutlet weak var trailingLabel: UILabel!
+    @IBOutlet weak var arrowImageView: UIImageView!
+    @IBOutlet weak var stackView: UIStackView!
     let brandColor = UIColor(red: 0.941, green: 0.216, blue: 0.259, alpha: 1)
     private lazy var arrowUpImage = UIImage(systemName: "arrowtriangle.up.fill")?.withTintColor(brandColor)
     private lazy var arrowDownImage = UIImage(systemName: "arrowtriangle.down.fill")?.withTintColor(brandColor)
@@ -25,12 +28,13 @@ class CardTitleView: BaseXibView {
     private var isExpended: Bool = false {
         didSet {
             if isExpended == true {
-                trailingButton.setImage(arrowUpImage, for: .normal)
+                arrowImageView.image = arrowUpImage
             } else {
-                trailingButton.setImage(arrowDownImage, for: .normal)
+                arrowImageView.image = arrowDownImage
             }
         }
     }
+    
     @IBAction func trailingButtonTapped(_ sender: Any) {
         isExpended.toggle()
         
@@ -38,8 +42,7 @@ class CardTitleView: BaseXibView {
     
     func setupView(data: CardTitleViewSpec) {
         leadingLabel.text = data.leadingText
-        trailingButton.setTitle(data.trailingText, for: .normal)
-        trailingButton.titleLabel?.font = UIFont(name: "NotoSansTC-Regular", size: 14)
+        trailingLabel.text = data.trailingText
         
         if let blackAndRedText = data.blackAndRedText {
             let attributedString = NSMutableAttributedString(string: blackAndRedText)

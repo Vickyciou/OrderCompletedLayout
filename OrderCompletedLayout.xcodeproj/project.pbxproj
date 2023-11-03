@@ -122,6 +122,57 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		9888CD122AF482340062C922 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98F95D282AEF81F5008088DD /* AmountViewModel.swift */,
+				98F95D2A2AEF848E008088DD /* APIResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9888CD132AF482610062C922 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98A5A0C12AF240F9009130EF /* ViewController.swift */,
+				98A5A0C22AF240F9009130EF /* ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9888CD142AF4828B0062C922 /* OrderCompletedPage */ = {
+			isa = PBXGroup;
+			children = (
+				9888CD122AF482340062C922 /* Model */,
+				9888CD132AF482610062C922 /* ViewController */,
+				9888CD152AF482AA0062C922 /* View */,
+			);
+			path = OrderCompletedPage;
+			sourceTree = "<group>";
+		};
+		9888CD152AF482AA0062C922 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98F95D222AEF5BC4008088DD /* AmountItemInfoDetailView.swift */,
+				98F95D202AEF5B9D008088DD /* AmountItemInfoDetailView.xib */,
+				98F95D242AEF670A008088DD /* AmountItemInfoView.swift */,
+				98F95D262AEF6745008088DD /* AmountItemInfoView.xib */,
+				98F95D2E2AEF8701008088DD /* AmountItemsView.swift */,
+				98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */,
+				98F95D302AEF89D1008088DD /* AmountPriceView.swift */,
+				98F95D322AEF89DD008088DD /* AmountPriceView.xib */,
+				98A5A0752AF21F1D009130EF /* AmountView.xib */,
+				98A5A0772AF21F39009130EF /* AmountView.swift */,
+				9888CD052AF2529B0062C922 /* DiscountView.xib */,
+				9888CD072AF252AA0062C922 /* DiscountView.swift */,
+				9888CD0A2AF3520C0062C922 /* DiscountDetailView.xib */,
+				9888CD0C2AF3522B0062C922 /* DiscountDetailView.swift */,
+				9888CD0E2AF376A30062C922 /* CardTitleView.xib */,
+				9888CD102AF376B90062C922 /* CardTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		98F95CE42AEF5653008088DD = {
 			isa = PBXGroup;
 			children = (
@@ -145,32 +196,13 @@
 		98F95CEF2AEF5653008088DD /* OrderCompletedLayout */ = {
 			isa = PBXGroup;
 			children = (
-				98F95D222AEF5BC4008088DD /* AmountItemInfoDetailView.swift */,
-				98F95D202AEF5B9D008088DD /* AmountItemInfoDetailView.xib */,
-				98F95D242AEF670A008088DD /* AmountItemInfoView.swift */,
-				98F95D262AEF6745008088DD /* AmountItemInfoView.xib */,
-				98F95D2E2AEF8701008088DD /* AmountItemsView.swift */,
-				98F95D2C2AEF86DD008088DD /* AmountItemsView.xib */,
-				9888CD042AF24FAE0062C922 /* Base */,
-				98F95D302AEF89D1008088DD /* AmountPriceView.swift */,
-				98F95D322AEF89DD008088DD /* AmountPriceView.xib */,
-				98F95D282AEF81F5008088DD /* AmountViewModel.swift */,
-				98F95D2A2AEF848E008088DD /* APIResponse.swift */,
-				98F95CF02AEF5653008088DD /* AppDelegate.swift */,
-				98F95CF92AEF5655008088DD /* Assets.xcassets */,
 				98F95CFE2AEF5655008088DD /* Info.plist */,
 				98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */,
+				98F95CF92AEF5655008088DD /* Assets.xcassets */,
 				98F95CF22AEF5653008088DD /* SceneDelegate.swift */,
-				98A5A0752AF21F1D009130EF /* AmountView.xib */,
-				98A5A0772AF21F39009130EF /* AmountView.swift */,
-				98A5A0C12AF240F9009130EF /* ViewController.swift */,
-				98A5A0C22AF240F9009130EF /* ViewController.xib */,
-				9888CD052AF2529B0062C922 /* DiscountView.xib */,
-				9888CD072AF252AA0062C922 /* DiscountView.swift */,
-				9888CD0A2AF3520C0062C922 /* DiscountDetailView.xib */,
-				9888CD0C2AF3522B0062C922 /* DiscountDetailView.swift */,
-				9888CD0E2AF376A30062C922 /* CardTitleView.xib */,
-				9888CD102AF376B90062C922 /* CardTitleView.swift */,
+				98F95CF02AEF5653008088DD /* AppDelegate.swift */,
+				9888CD042AF24FAE0062C922 /* Base */,
+				9888CD142AF4828B0062C922 /* OrderCompletedPage */,
 			);
 			path = OrderCompletedLayout;
 			sourceTree = "<group>";

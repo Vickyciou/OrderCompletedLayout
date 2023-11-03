@@ -38,7 +38,7 @@ struct APIResponse: AmountViewSpec {
                                               trailingText: "$ 70")
 
 
-        let item1 = ItemInfoField(showRedLine: true,
+        let item1 = ItemInfoField(showRedLine: false,
                                   leadingTitleText: "包車一日遊(1-4人) - 電子票",
                                   details: [itemDetail1])
 
@@ -61,7 +61,7 @@ struct APIResponse: AmountViewSpec {
                                             ItemInfoField(showRedLine: true,
                                                           leadingTitleText: "費用",
                                                           details: [
-                                                            ItemInfoDetailField(leadingText: "大人 x 2位、小孩 x 2位、嬰兒 x 2位")
+                                                            ItemInfoDetailField(title: "大人 x 2位、小孩 x 2位、嬰兒 x 2位")
                                                           ])
                                         ],
                                        subTotalInfo: AmountPriceField(titleTrailingRedText: "金額小計: $ 52,000",
