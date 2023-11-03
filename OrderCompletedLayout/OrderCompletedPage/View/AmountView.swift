@@ -29,6 +29,11 @@ class AmountView: BaseXibView {
     private let bottomAmountView = AmountPriceView()
     
     func setupView(type: ProductType, data: AmountViewSpec) {
+        stackView.arrangedSubviews.forEach {
+            stackView.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
+        
         cardTitleView.setupView(data: data.titleField)
         
         let subviews: [UIView] = {

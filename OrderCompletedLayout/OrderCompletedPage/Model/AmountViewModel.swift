@@ -31,8 +31,6 @@ struct ItemInfoDetailField {
     var title: String?
     var leadingText: String?
     var trailingText: String?
-    var leadingTextColor: UIColor? = .black
-    var trailingTextColor: UIColor? = .black
 }
 
 struct AmountPriceField {
@@ -43,7 +41,8 @@ struct AmountPriceField {
 }
 
 struct DiscountField {
-    var discountDetail: [DiscountDetailField]
+//    var discountDetail: [DiscountDetailField]
+    var detail: [ItemInfoDetailField]
 }
 
 struct DiscountDetailField {

@@ -8,6 +8,15 @@
 import Foundation
 import UIKit
 
+struct Response {
+    let data: AmountResponse
+}
+
+struct AmountResponse {
+    let type: ProductType
+    let data: AmountViewSpec
+}
+
 struct APIResponse: AmountViewSpec {
     var titleField: TitleField
     var freeTravelCost: AllItemsField?
@@ -67,16 +76,29 @@ struct APIResponse: AmountViewSpec {
                                        subTotalInfo: AmountPriceField(titleTrailingRedText: "金額小計: $ 52,000",
                                                                       subTrailingRedText: "參考稅金：  $ 8,000"))
         
+//        discountField = DiscountField(
+//            discountDetail: [
+//                DiscountDetailField(leadingText: "雙11下殺/會員獨享優惠",
+//                                trailingText: "- $ 1,000"
+//                                   ),
+//                                
+//                DiscountDetailField(leadingText: "國旅券折抵",
+//                                trailingText: "- $ 1,000"
+//                               ),
+//                DiscountDetailField(leadingText: "折扣碼",
+//                                trailingText: "- $ 1,000"
+//                                )
+//        ])
         discountField = DiscountField(
-            discountDetail: [
-                DiscountDetailField(leadingText: "雙11下殺/會員獨享優惠",
+            detail: [
+                ItemInfoDetailField(leadingText: "雙11下殺/會員獨享優惠",
                                 trailingText: "- $ 1,000"
                                    ),
                                 
-                DiscountDetailField(leadingText: "國旅券折抵",
+                ItemInfoDetailField(leadingText: "國旅券折抵",
                                 trailingText: "- $ 1,000"
                                ),
-                DiscountDetailField(leadingText: "折扣碼",
+                ItemInfoDetailField(leadingText: "折扣碼",
                                 trailingText: "- $ 1,000"
                                 )
         ])

@@ -8,17 +8,21 @@
 import UIKit
 
 protocol DiscountViewSpec {
-    var discountDetail: [DiscountDetailField] { get }
+    var detail: [ItemInfoDetailField] { get }
+//    var discountDetail: [DiscountDetailField] { get }
 }
 
 class DiscountView: BaseXibView {
     @IBOutlet weak var stackView: UIStackView!
     
     func setupView(data: DiscountViewSpec) {
-        for index in 0..<data.discountDetail.count {
-            let view = DiscountDetailView()
+        for index in 0..<data.detail.count {
+            let view = AmountItemInfoDetailView()
             stackView.addArrangedSubview(view)
-            view.setupView(data: data.discountDetail[index])
+            view.setupView(data: data.detail[index])
+            let font = UIFont.medium2()
+            view.setupTrailingSubtitleFont(font: font)
+            view.setupTrailingTextColor(trailingSubtitleColor: UIColor(red: 0.941, green: 0.216, blue: 0.259, alpha: 1))
         }
         
 

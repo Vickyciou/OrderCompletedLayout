@@ -13,6 +13,7 @@
 		9888CD0D2AF3522B0062C922 /* DiscountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888CD0C2AF3522B0062C922 /* DiscountDetailView.swift */; };
 		9888CD0F2AF376A30062C922 /* CardTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9888CD0E2AF376A30062C922 /* CardTitleView.xib */; };
 		9888CD112AF376B90062C922 /* CardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888CD102AF376B90062C922 /* CardTitleView.swift */; };
+		9888CD182AF4ECDD0062C922 /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888CD172AF4ECDD0062C922 /* UIFont+extension.swift */; };
 		98A5A0762AF21F1D009130EF /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A0752AF21F1D009130EF /* AmountView.xib */; };
 		98A5A0782AF21F39009130EF /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0772AF21F39009130EF /* AmountView.swift */; };
 		98A5A0C02AF23EBE009130EF /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */; };
@@ -61,6 +62,7 @@
 		9888CD0C2AF3522B0062C922 /* DiscountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountDetailView.swift; sourceTree = "<group>"; };
 		9888CD0E2AF376A30062C922 /* CardTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTitleView.xib; sourceTree = "<group>"; };
 		9888CD102AF376B90062C922 /* CardTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTitleView.swift; sourceTree = "<group>"; };
+		9888CD172AF4ECDD0062C922 /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
 		98A5A0752AF21F1D009130EF /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
 		98A5A0772AF21F39009130EF /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9888CD162AF4ECB80062C922 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9888CD172AF4ECDD0062C922 /* UIFont+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		98F95CE42AEF5653008088DD = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +212,7 @@
 				98F95CF22AEF5653008088DD /* SceneDelegate.swift */,
 				98F95CF02AEF5653008088DD /* AppDelegate.swift */,
 				9888CD042AF24FAE0062C922 /* Base */,
+				9888CD162AF4ECB80062C922 /* Extension */,
 				9888CD142AF4828B0062C922 /* OrderCompletedPage */,
 			);
 			path = OrderCompletedLayout;
@@ -364,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F95D2B2AEF848E008088DD /* APIResponse.swift in Sources */,
+				9888CD182AF4ECDD0062C922 /* UIFont+extension.swift in Sources */,
 				98A5A0C02AF23EBE009130EF /* BaseXibView.swift in Sources */,
 				9888CD0D2AF3522B0062C922 /* DiscountDetailView.swift in Sources */,
 				98F95D2F2AEF8701008088DD /* AmountItemsView.swift in Sources */,

@@ -11,22 +11,13 @@ protocol AmountItemInfoDetailViewSpec {
     var title: String? { get }
     var leadingText: String? { get }
     var trailingText: String? { get }
-    var leadingTextColor: UIColor? { get }
-    var trailingTextColor: UIColor? { get }
 }
 
 class AmountItemInfoDetailView: BaseXibView {
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var leadingSubtitleLabel: UILabel!
-    @IBOutlet weak var trailingSubtitleLabel: UILabel!
-    @IBOutlet weak var subtitleStackView: UIStackView!
-    private var leadingSubtitleColor: UIColor? = .black
-    private var trailingSubtitleColor: UIColor? = .black
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var leadingSubtitleLabel: UILabel!
+    @IBOutlet private weak var trailingSubtitleLabel: UILabel!
+    @IBOutlet private weak var subtitleStackView: UIStackView!
     
     func setupView(data: AmountItemInfoDetailViewSpec) {
         titleLabel.text = data.title
@@ -38,8 +29,22 @@ class AmountItemInfoDetailView: BaseXibView {
         subtitleStackView.isHidden =
         (data.leadingText == nil || data.leadingText?.isEmpty == true) &&
         (data.trailingText == nil || data.trailingText?.isEmpty == true)
-
-        leadingSubtitleLabel.textColor = data.leadingTextColor ?? leadingSubtitleColor
-        trailingSubtitleLabel.textColor = data.trailingTextColor ?? trailingSubtitleColor
+        
+    }
+    
+    func setupLeadingTextColor(leadingSubtitleColor: UIColor) {
+        leadingSubtitleLabel.textColor = leadingSubtitleColor
+    }
+    
+    func setupTrailingTextColor(trailingSubtitleColor: UIColor) {
+        trailingSubtitleLabel.textColor = trailingSubtitleColor
+    }
+    
+    func setupLeadingSubtitleFont(font: UIFont?) {
+        leadingSubtitleLabel.font = font
+    }
+    
+    func setupTrailingSubtitleFont(font: UIFont?) {
+        trailingSubtitleLabel.font = font
     }
 }
