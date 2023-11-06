@@ -19,20 +19,51 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-TU-Hf4" customClass="AmountView" customModule="OrderCompletedLayout" customModuleProvider="target">
-                    <rect key="frame" x="16" y="75" width="361" height="727"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyf-PR-iJb">
+                    <rect key="frame" x="0.0" y="50" width="393" height="802"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gbd-iw-fO2">
+                            <rect key="frame" x="24" y="0.0" width="345" height="693"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-TU-Hf4" customClass="AmountView" customModule="OrderCompletedLayout" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="345" height="693"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Zkh-TU-Hf4" secondAttribute="trailing" id="3qZ-yh-6aU"/>
+                                <constraint firstItem="Zkh-TU-Hf4" firstAttribute="leading" secondItem="gbd-iw-fO2" secondAttribute="leading" id="AnD-iU-Bzc"/>
+                                <constraint firstItem="Zkh-TU-Hf4" firstAttribute="top" secondItem="gbd-iw-fO2" secondAttribute="top" id="GgY-f5-9wF"/>
+                                <constraint firstAttribute="height" constant="693" placeholder="YES" id="I1t-mO-KCh"/>
+                                <constraint firstAttribute="bottom" secondItem="Zkh-TU-Hf4" secondAttribute="bottom" id="bFV-xh-Wjh"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gbd-iw-fO2" firstAttribute="width" secondItem="Iyf-PR-iJb" secondAttribute="width" constant="-48" id="115-bN-5Ez"/>
+                        <constraint firstItem="gbd-iw-fO2" firstAttribute="top" secondItem="8s9-Uh-bkD" secondAttribute="top" id="JXN-jU-h2F"/>
+                        <constraint firstItem="gbd-iw-fO2" firstAttribute="bottom" secondItem="8s9-Uh-bkD" secondAttribute="bottom" id="Ocv-1M-TMb"/>
+                        <constraint firstAttribute="trailing" secondItem="gbd-iw-fO2" secondAttribute="trailing" constant="24" id="fKR-xn-xU6"/>
+                        <constraint firstItem="gbd-iw-fO2" firstAttribute="leading" secondItem="Iyf-PR-iJb" secondAttribute="leading" constant="24" id="vJm-OL-zKx"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="8s9-Uh-bkD"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="CBV-vv-wwj"/>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.21568627450980393" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Zkh-TU-Hf4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="4mo-AK-RS5"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zkh-TU-Hf4" secondAttribute="trailing" constant="16" id="Gge-G4-x4b"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Zkh-TU-Hf4" secondAttribute="bottom" constant="16" id="Qzj-Y6-afx"/>
-                <constraint firstItem="Zkh-TU-Hf4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rzw-dd-Wj9"/>
+                <constraint firstAttribute="bottom" secondItem="Iyf-PR-iJb" secondAttribute="bottom" id="Aew-ui-WuV"/>
+                <constraint firstItem="Iyf-PR-iJb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="TWm-bL-v3b"/>
+                <constraint firstAttribute="trailing" secondItem="Iyf-PR-iJb" secondAttribute="trailing" id="aiu-kc-2g8"/>
+                <constraint firstItem="Iyf-PR-iJb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dBJ-kk-6jZ"/>
             </constraints>
-            <point key="canvasLocation" x="134" y="21"/>
+            <point key="canvasLocation" x="133.58778625954199" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>

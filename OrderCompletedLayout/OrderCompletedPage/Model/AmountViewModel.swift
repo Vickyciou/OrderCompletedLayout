@@ -8,6 +8,23 @@
 import Foundation
 import UIKit
 
+struct Response {
+    let data: [AmountResponse]
+}
+
+struct AmountResponse {
+    let type: ProductType
+    let amountInfo: AmountInfo
+}
+
+struct AmountInfo {
+    var titleField : TitleField
+    var freeTravelCost: AllItemsField?
+    var allItemsField: AllItemsField
+    var discountField: DiscountField?
+    var amountPriceField: AmountPriceField
+}
+
 struct TitleField {
     var leadingText: String
     var blackAndRedText: String?
@@ -41,7 +58,6 @@ struct AmountPriceField {
 }
 
 struct DiscountField {
-//    var discountDetail: [DiscountDetailField]
     var detail: [ItemInfoDetailField]
 }
 
@@ -49,6 +65,9 @@ struct DiscountDetailField {
     var leadingText: String?
     var trailingText: String?
 }
+
+extension AmountInfo: AmountViewSpec {}
+
 extension TitleField: CardTitleViewSpec {}
 
 extension AllItemsField: AmountItemsViewSpec {}

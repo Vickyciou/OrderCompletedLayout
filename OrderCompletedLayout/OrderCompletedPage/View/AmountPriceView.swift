@@ -39,10 +39,13 @@ class AmountPriceView: BaseXibView {
         
         descriptionLabel.isHidden = data.descriptionText == nil || data.descriptionText?.isEmpty == true
         
-        if descriptionLabel.numberOfLines >= 1 {
-            descriptionLabel.textAlignment = .right
-        } else {
-            descriptionLabel.textAlignment = .left
+        if let textSize = descriptionLabel.text?.size(
+            withAttributes: [.font: UIFont.regular3(fontName: .pingFangTC) as Any]) {
+            if textSize.width <= descriptionLabel.bounds.size.width {
+                descriptionLabel.textAlignment = .right
+            } else {
+                descriptionLabel.textAlignment = .left
+            }
         }
     }
 }

@@ -9,7 +9,6 @@ import UIKit
 
 protocol DiscountViewSpec {
     var detail: [ItemInfoDetailField] { get }
-//    var discountDetail: [DiscountDetailField] { get }
 }
 
 class DiscountView: BaseXibView {
@@ -20,7 +19,7 @@ class DiscountView: BaseXibView {
             let view = AmountItemInfoDetailView()
             stackView.addArrangedSubview(view)
             view.setupView(data: data.detail[index])
-            let font = UIFont.medium2()
+            let font = UIFont.medium2(fontName: .naotoSansTC)
             view.setupTrailingSubtitleFont(font: font)
             view.setupTrailingTextColor(trailingSubtitleColor: UIColor(red: 0.941, green: 0.216, blue: 0.259, alpha: 1))
         }

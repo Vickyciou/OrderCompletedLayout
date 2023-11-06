@@ -14,6 +14,8 @@
 		9888CD0F2AF376A30062C922 /* CardTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9888CD0E2AF376A30062C922 /* CardTitleView.xib */; };
 		9888CD112AF376B90062C922 /* CardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888CD102AF376B90062C922 /* CardTitleView.swift */; };
 		9888CD182AF4ECDD0062C922 /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888CD172AF4ECDD0062C922 /* UIFont+extension.swift */; };
+		9888CD1C2AF896EC0062C922 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9888CD1A2AF896EC0062C922 /* RootViewController.xib */; };
+		9888CD1E2AF89B850062C922 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888CD1D2AF89B850062C922 /* RootViewController.swift */; };
 		98A5A0762AF21F1D009130EF /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A0752AF21F1D009130EF /* AmountView.xib */; };
 		98A5A0782AF21F39009130EF /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0772AF21F39009130EF /* AmountView.swift */; };
 		98A5A0C02AF23EBE009130EF /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */; };
@@ -63,6 +65,8 @@
 		9888CD0E2AF376A30062C922 /* CardTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTitleView.xib; sourceTree = "<group>"; };
 		9888CD102AF376B90062C922 /* CardTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTitleView.swift; sourceTree = "<group>"; };
 		9888CD172AF4ECDD0062C922 /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
+		9888CD1A2AF896EC0062C922 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		9888CD1D2AF89B850062C922 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		98A5A0752AF21F1D009130EF /* AmountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
 		98A5A0772AF21F39009130EF /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		98A5A0BF2AF23EBE009130EF /* BaseXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 		98F95CEF2AEF5653008088DD /* OrderCompletedLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9888CD1D2AF89B850062C922 /* RootViewController.swift */,
+				9888CD1A2AF896EC0062C922 /* RootViewController.xib */,
 				98F95CFE2AEF5655008088DD /* Info.plist */,
 				98F95CFB2AEF5655008088DD /* LaunchScreen.storyboard */,
 				98F95CF92AEF5655008088DD /* Assets.xcassets */,
@@ -341,6 +347,7 @@
 			files = (
 				98F95D272AEF6745008088DD /* AmountItemInfoView.xib in Resources */,
 				98A5A0C42AF240F9009130EF /* ViewController.xib in Resources */,
+				9888CD1C2AF896EC0062C922 /* RootViewController.xib in Resources */,
 				98F95D212AEF5B9D008088DD /* AmountItemInfoDetailView.xib in Resources */,
 				98F95CFD2AEF5655008088DD /* LaunchScreen.storyboard in Resources */,
 				9888CD0B2AF3520C0062C922 /* DiscountDetailView.xib in Resources */,
@@ -380,6 +387,7 @@
 				9888CD0D2AF3522B0062C922 /* DiscountDetailView.swift in Sources */,
 				98F95D2F2AEF8701008088DD /* AmountItemsView.swift in Sources */,
 				98F95D232AEF5BC4008088DD /* AmountItemInfoDetailView.swift in Sources */,
+				9888CD1E2AF89B850062C922 /* RootViewController.swift in Sources */,
 				98F95D292AEF81F5008088DD /* AmountViewModel.swift in Sources */,
 				9888CD082AF252AA0062C922 /* DiscountView.swift in Sources */,
 				98F95D252AEF670A008088DD /* AmountItemInfoView.swift in Sources */,
